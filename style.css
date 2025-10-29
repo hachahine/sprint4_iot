@@ -1,0 +1,44 @@
+/* Remove o padding excessivo do Streamlit */
+div[data-testid="column"] {
+    padding: 5px;
+}
+
+/* O container de cada vaga */
+.spot-container {
+    border-radius: 8px;          /* Bordas arredondadas */
+    padding: 12px;               /* Espaçamento interno */
+    height: 100px;               /* Altura fixa */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo */
+    color: white;                /* Texto branco */
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra suave */
+}
+
+/* Estilo da vaga DISPONÍVEL */
+.spot-disponivel {
+    background-color: #28a745; /* Verde */
+    border: 2px solid #1e7e34;
+}
+
+/* Estilo da vaga OCUPADA */
+.spot-ocupada {
+    background-color: #dc3545; /* Vermelho */
+    border: 2px solid #b02a37;
+}
+
+/* Estilo para o ID do sensor (pequeno) */
+.spot-id {
+    font-size: 0.8em;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Estilo para o conteúdo (Placa ou "Disponível") */
+.spot-content {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.1;
+}
