@@ -135,7 +135,7 @@ streamlit run dashboard.py
 
 
 
-## Como Usar
+## Como Usar
 
 
 
@@ -150,5 +150,6 @@ streamlit run dashboard.py
 5. **Use os botões** para enviar comandos remotos
 
 6. **Acompanhe o log** para ver todas as mensagens
+
 
 
