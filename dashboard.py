@@ -33,7 +33,7 @@ load_css("style.css")
 
 
 # refresh na pagina a cada 10 segundos
-st_autorefresh(interval=10000, key="data_refresher")
+st_autorefresh(interval=5000, key="data_refresher")
 
 
 if 'selected_sensor' not in st.session_state:
@@ -42,7 +42,7 @@ if 'selected_sensor' not in st.session_state:
 
 
 @st.cache_data(ttl=5)
-def fetch_patio_status():
+def fetch_patio_status() -> pd.DataFrame:
     """Busca o status atual de todos os devices"""
 
     engine = create_engine(DB_URI)
